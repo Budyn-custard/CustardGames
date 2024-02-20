@@ -128,3 +128,5 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+.vs/CustardGames/v17/.wsuo
+.vs/VSWorkspaceState.json

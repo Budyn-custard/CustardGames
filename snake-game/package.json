@@ -1,0 +1,17 @@
+{
+  "name": "snake-game",
+  "version": "1.0.0",
+  "description": "snake-game",
+  "main": "index.js",
+  "scripts": {
+    "serve": "web-dev-server --app-index index.html --node-resolve --watch --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit": "^3.1.2"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.2"
+  }
+}
