@@ -1,7 +1,5 @@
 import { LitElement, html, css } from 'lit';
 import { classMap } from 'lit/directives/class-map.js';
-import sharedStyles from './shared-styles.js';
-
 class SnakeGame extends LitElement {
     static styles = css`
     :host {
@@ -145,7 +143,6 @@ class SnakeGame extends LitElement {
 
   checkCollision() {
     const head = this.snake[0];
-    // Boundary checks
     const gameWidth = (this.gameSize / 20);
     if (head.x < 0 || head.x >= gameWidth || head.y < 0 || head.y >= gameWidth) {
       console.log("Collision happened.");
@@ -157,7 +154,7 @@ class SnakeGame extends LitElement {
     if (head.x === this.food.x && head.y === this.food.y) {
       this.snake.push({ ...this.snake[this.snake.length - 1] }); // Extend the snake
       this.food = { x: this.randomPosition(), y: this.randomPosition() };
-      this.score += 1; // Corrected this line
+      this.score += 1;
     }
   }
 
